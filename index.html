@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@500&family=Indie+Flower&display=swap');
+    </style>
+</head>
+<body onload="PlaySound()">
+
+    <div class="copyright-container">
+        <p class="copyright-holder">
+            <span>&copy; Copyright,</span>
+            <a href="https://github.com/JoshLander18">Joshua Watson</a>
+        </p>
+    </div>
+
+    <div class="container">
+
+        <div class="header-container">
+            <h2 class="main-header">
+                <span class="rock-span">ROCK</span>,
+                <span class="paper-span">PAPER</span>,
+                <span class="scissors-span">SCISSORS</span>
+            </h2>
+        </div>
+        <div class="wrapper">
+        <div class="column1">
+            <h3 id="player-item">Player:</h3>
+        </div>
+        <div class="column2">
+            <h3 id="computer-item">Computer:</h3>
+        </div>
+    </div>
+    </div>
+
+    <div class="start-container">
+    <button id="start-btn" onclick="startGame()">START GAME</button>
+    </div>
+    
+    <div id="game-end">
+        <h3 class="game-end-title">GAME HAS FINISHED</h3>
+        <button id="play-btn" onclick="playAgain()">PLAY AGAIN</button>
+</div>
+</div>    
+
+    <script src="index.js"></script>
+</body>
+</html>
